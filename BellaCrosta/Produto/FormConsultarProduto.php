@@ -202,16 +202,17 @@
         </nav>
 
 
-                <h1>Consultar Clientes Cadastrados</h1>
+                <h1>Consultar Produtos Cadastrados</h1>
             <table class="table">
                 <thead>
                     <tr>
                         <td scope="col"><strong>ID</strong></td>	
                         <td scope="col"><strong>Nome</strong></td>		
-                        <td scope="col"><strong>CPF</strong></td>
-                        <td scope="col"><strong>Email</strong></td>
-                        <td scope="col"><strong>Telefone</strong></td>
-                        <td scope="col"><strong>Senha</strong></td>
+                        <td scope="col"><strong>Descrição</strong></td>
+                        <td scope="col"><strong>Valor de Compra</strong></td>
+                        <td scope="col"><strong>Valor de Venda</strong></td>
+                        <td scope="col"><strong>Ingredientes</strong></td>
+                        <td scope="col"><strong>Imagem</strong></td>
                         <td scope="col"><strong>Editar</strong></td>
                         <td scope="col"><strong>Deletar</strong></td>
                     </tr>
@@ -222,14 +223,14 @@
                         $selecionar= mysqli_query($conn, "SELECT * FROM tb_clientes");
                         while ($campo= mysqli_fetch_array($selecionar)){?>
                             <tr>
-                                <th scope="row"><?=$campo["id_clientes"]?></th>
+                                <th scope="row"><?=$campo["id_produto"]?></th>
                                 <th scope="row"><?=$campo["nome"]?></th>
-                                <th scope="row"><?=$campo["cpf"]?></th>
-                                <th scope="row"><?=$campo["email"]?></th>
-                                <th scope="row"><?=$campo["telefone"]?></th>
-                                <th scope="row"><?=$campo["senha"]?></th>
-                                <th scope="row"><a href="FormEditarCliente.php?editarid=<?php echo $campo ['id_clientes'];?>">Editar</a></th>
-                                <th scope="row"><i><a href="ExcluirCliente.php?p=excluir&cliente=<?php echo $campo['id_clientes'];?>">Excluir</i></a></th>
+                                <th scope="row"><?=$campo["descricao"]?></th>
+                                <th scope="row"><?=$campo["valor_compra"]?></th>
+                                <th scope="row"><?=$campo["valor_venda"]?></th>
+                                <th scope="row"><?=$campo["ingredientes"]?></th>
+                                <th scope="row"><img src="../image/<?=$campo["imagem"]?>" alt="Imagem do Produto" width="100"></th>
+                                <th scope="row"><i><a href="ExcluirProduto.php?p=excluir&produto=<?php echo $campo['id_produto'];?>">Excluir</i></a></th>
                             </tr>
                     <?php }?>
                 </table>

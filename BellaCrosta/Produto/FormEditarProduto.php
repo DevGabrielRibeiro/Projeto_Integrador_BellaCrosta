@@ -207,7 +207,7 @@
                 <?php
                 include("../conectarbd.php");
                 $recid = filter_input(INPUT_GET, 'editarid');
-                $selecionar = mysqli_query($conn, "SELECT * FROM tb_clientes WHERE id_clientes=$recid");
+                $selecionar = mysqli_query($conn, "SELECT * FROM tb_produtos WHERE id_produto=$recid");
                 $campo = mysqli_fetch_array($selecionar);
                 ?>
 
@@ -223,11 +223,11 @@
                                         <div class="col-lg-6">
                                             <div class="p-5">
                                                 <div class="text-center">
-                                                    <h1 class="h4 text-gray-900 mb-4">Editar Dados do Cliente</h1>
+                                                    <h1 class="h4 text-gray-900 mb-4">Editar Dados do Produto</h1>
                                                 </div>
-                                                <form class="user" action="EditarCliente.php" method="post">
+                                                <form class="user" action="EditarProduto.php" method="post">
                                                     <!--esta linha cria um campo oculto para passar o id_cidade, pois senão ao clicar em Salvar o código não saberá onde salvar.-->
-                                                    <input type="hidden" name="id" value="<?= $campo["id_clientes"] ?>">
+                                                    <input type="hidden" name="id" value="<?= $campo["id_produto"] ?>">
 
                                                     <div class="form-group">
                                                         <input type="text" class="form-control form-control-user" id="exampleInputNome"
@@ -237,25 +237,31 @@
 
                                                     <div class="form-group">
                                                         <input type="text" class="form-control form-control-user" id="exampleInputCpf"
-                                                               name="cpf" placeholder="Digite seu CPF" value="<?= $campo["cpf"] ?>">
+                                                               name="descricao" placeholder="Digite a descrição" value="<?= $campo["descricao"] ?>">
                                                     </div>
 
                                                     <div class="form-group">
                                                         <input type="email" class="form-control form-control-user"
-                                                               id="exampleInputEmail" name="email" placeholder="Digite seu email"
-                                                               value="<?= $campo["email"] ?>">
+                                                               id="exampleInputEmail" name="valor_compra" placeholder="Digite o valor de compra"
+                                                               value="<?= $campo["valor_compra"] ?>">
                                                     </div>
 
                                                     <div class="form-group">
                                                         <input type="text" class="form-control form-control-user"
-                                                               id="exampleInputTelefone" name="telefone" placeholder="Digite seu telefone"
-                                                               value="<?= $campo["telefone"] ?>">
+                                                               id="exampleInputTelefone" name="valor_venda" placeholder="Digite o valor de venda"
+                                                               value="<?= $campo["valor_venda"] ?>">
                                                     </div>
 
                                                     <div class="form-group">
-                                                        <input type="password" class="form-control form-control-user"
-                                                               id="exampleInputPassword" name="senha" placeholder="Digite sua senha"
-                                                               value="<?= $campo["senha"] ?>">
+                                                        <input type="text" class="form-control form-control-user"
+                                                               id="exampleInputPassword" name="ingredientes" placeholder="Digite os ingredientes"
+                                                               value="<?= $campo["ingredientes"] ?>">
+                                                    </div>
+
+                                                     <div class="form-group">
+                                                        <input type="text" class="form-control form-control-user"
+                                                               id="exampleInputPassword" name="imagem" placeholder="Coloque a imagem"
+                                                               value="<?= $campo["imagem"] ?>">
                                                     </div>
 
                                                     <button class="btn btn-primary btn-user btn-block">
