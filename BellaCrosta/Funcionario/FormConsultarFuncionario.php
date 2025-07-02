@@ -7,7 +7,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     </head>
 
-<body class="formCadastrarCliente">
+<body class="formCadastrarFuncionario">
     <div id="wrapper">
     <!-- Sidebar -->
     <ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar">
@@ -208,10 +208,14 @@
                     <tr>
                         <td scope="col"><strong>ID</strong></td>	
                         <td scope="col"><strong>Nome</strong></td>		
+                        <td scope="col"><strong>Data Nascimento</strong></td>
                         <td scope="col"><strong>CPF</strong></td>
-                        <td scope="col"><strong>Email</strong></td>
                         <td scope="col"><strong>Telefone</strong></td>
-                        <td scope="col"><strong>Senha</strong></td>
+                        <td scope="col"><strong>Bairro</strong></td>
+                        <td scope="col"><strong>Cidade</strong></td>
+                        <td scope="col"><strong>Estado</strong></td>
+                        <td scope="col"><strong>Gênero</strong></td>
+                        <td scope="col"><strong>Email</strong></td>
                         <td scope="col"><strong>Editar</strong></td>
                         <td scope="col"><strong>Deletar</strong></td>
                     </tr>
@@ -219,17 +223,21 @@
 
                     <?php
                         include("../conectarbd.php");
-                        $selecionar= mysqli_query($conn, "SELECT * FROM tb_clientes");
+                        $selecionar= mysqli_query($conn, "SELECT * FROM tb_funcionarios");
                         while ($campo= mysqli_fetch_array($selecionar)){?>
                             <tr>
-                                <th scope="row"><?=$campo["id_clientes"]?></th>
+                                <th scope="row"><?=$campo["id_funcionarios"]?></th>
                                 <th scope="row"><?=$campo["nome"]?></th>
+                                <th scope="row"><?=$campo["data_nascimento"]?></th>
                                 <th scope="row"><?=$campo["cpf"]?></th>
-                                <th scope="row"><?=$campo["email"]?></th>
                                 <th scope="row"><?=$campo["telefone"]?></th>
-                                <th scope="row"><?=$campo["senha"]?></th>
-                                <th scope="row"><a href="FormEditarCliente.php?editarid=<?php echo $campo ['id_clientes'];?>">Editar</a></th>
-                                <th scope="row"><i><a href="ExcluirCliente.php?p=excluir&cliente=<?php echo $campo['id_clientes'];?>">Excluir</i></a></th>
+                                <th scope="row"><?=$campo["bairro"]?></th>
+                                <th scope="row"><?=$campo["cidade"]?></th>
+                                <th scope="row"><?=$campo["estado"]?></th>
+                                <th scope="row"><?=$campo["genero"]?></th>
+                                <th scope="row"><?=$campo["email"]?></th>
+                                <th scope="row"><a href="FormEditarFuncionario.php?editarid=<?php echo $campo ['id_funcionarios'];?>">Editar</a></th>
+                                <th scope="row"><i><a href="ExcluirFuncionario.php?p=excluir&funcionario=<?php echo $campo['id_funcionarios'];?>">Excluir</i></a></th>
                             </tr>
                     <?php }?>
                 </table>
