@@ -7,16 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>Cadastro de Clientes</title>
     <link rel="icon" type="image/png" href="image/Logo.png">
-
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
-
     <!-- Custom styles for this template-->
     <link href="../css/sb-admin-2.min.css" rel="stylesheet">
 
@@ -136,7 +133,8 @@
         </ul>
         <!-- End of Sidebar -->
 
-        <div id="content-wrapper" class="d-flex flex-column" <!-- Topbar -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <!-- Topbar -->
             <nav class="navbar navbar-expand navbar-light topbar mb-4 static-top shadow" id="navbar-color">
 
                 <!-- Sidebar Toggle (Topbar) -->
@@ -228,34 +226,193 @@
                                 <!-- Nested Row within Card Body -->
                                 <div class="row">
                                     <div class="col-lg-6 d-none d-lg-block bg-login-image">
-                                        <img src="../image/Image_Login.png" alt="">
+                                        <img src="" alt="">
                                     </div>
                                     <div class="col-lg-6">
                                         <div class="p-5">
                                             <div class="text-center">
-                                                <h1 class="h4 text-gray-900 mb-4">Cadastro de Cliente</h1>
+                                                <h1 class="h4 text-gray-900 mb-4">Cadastro de Funcionário</h1>
                                             </div>
-                                            <form class="user" action="CadastrarCliente.php" method="post">
+                                            <form class="user" action="CadastrarFuncionario.php" method="post">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control form-control-user"
-                                                        id="exampleInputNome" aria-describedby="emailHelp"
-                                                        name="nome" placeholder="Digite seu nome">
+                                                    <input type="text" class="form-control input-format"
+                                                        id="exampleInputNome" aria-describedby="emailHelp" name="nome"
+                                                        placeholder="Digite seu nome">
                                                 </div>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control form-control-user"
-                                                        id="exampleInputCpf"  name="cpf" placeholder="Digite seu CPF">
+                                                <div class="form-group row">
+                                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                                        <input type="date" class="form-control input-format"
+                                                            id="exampleDate" name="data_nasc"
+                                                            placeholder="Data nascimento">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control input-format"
+                                                            id="exampleCpf" name="cpf" placeholder="CPF">
+                                                    </div>
                                                 </div>
-                                                <div class="form-group">
-                                                    <input type="email" class="form-control form-control-user"
-                                                        id="exampleInputEmail" name="email"  placeholder="Digite seu email">
+                                                <div class="form-group row">
+                                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                                        <input type="text" class="form-control input-format"
+                                                            id="exampleTelefone" name="telefone" placeholder="Telefone">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control input-format"
+                                                            id="exampleCep" name="cep" placeholder="CEP">
+                                                    </div>
                                                 </div>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control form-control-user"
-                                                        id="exampleInputTelefone" name="telefone"  placeholder="Digite seu telefone">
+                                                <div class="form-group row">
+                                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                                        <input type="text" class="form-control input-format"
+                                                            id="exampleEndereco" name="endereco" placeholder="Endereco">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control input-format"
+                                                            id="exampleN" name="n_casa" placeholder="Número da casa">
+                                                    </div>
                                                 </div>
-                                                <div class="form-group">
-                                                    <input type="password" class="form-control form-control-user"
-                                                        id="exampleInputPassword" name="senha" placeholder="Digite sua senha">
+                                                <div class="form-group row">
+                                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                                        <input type="text" class="form-control input-format"
+                                                            id="exampleComplemento" name="complemento"
+                                                            placeholder="Complemento">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control input-format"
+                                                            id="exampleBairro" name="bairro" placeholder="Bairro">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                                        <input type="text" class="form-control input-format"
+                                                            id="exampleCidade" name="cidade" placeholder="Cidade">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <select class="form-control select-format" name="estado">
+                                                            <option value="" disabled selected hidden>Estado</option>
+                                                            <option value="AC">Acre</option>
+                                                            <option value="AL">Alagoas</option>
+                                                            <option value="AP">Amapá</option>
+                                                            <option value="AM">Amazonas</option>
+                                                            <option value="BA">Bahia</option>
+                                                            <option value="CE">Ceará</option>
+                                                            <option value="DF">Distrito Federal</option>
+                                                            <option value="ES">Espírito Santo</option>
+                                                            <option value="GO">Goiás</option>
+                                                            <option value="MA">Maranhão</option>
+                                                            <option value="MT">Mato Grosso</option>
+                                                            <option value="MS">Mato Grosso do Sul</option>
+                                                            <option value="MG">Minas Gerais</option>
+                                                            <option value="PA">Pará</option>
+                                                            <option value="PB">Paraíba</option>
+                                                            <option value="PR">Paraná</option>
+                                                            <option value="PE">Pernambuco</option>
+                                                            <option value="PI">Piauí</option>
+                                                            <option value="RJ">Rio de Janeiro</option>
+                                                            <option value="RN">Rio Grande do Norte</option>
+                                                            <option value="RS">Rio Grande do Sul</option>
+                                                            <option value="RO">Rondônia</option>
+                                                            <option value="RR">Roraima</option>
+                                                            <option value="SC">Santa Catarina</option>
+                                                            <option value="SP">São Paulo</option>
+                                                            <option value="SE">Sergipe</option>
+                                                            <option value="TO">Tocantins</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                                        <select class="form-control select-format" name="genero">
+                                                            <option value="" disabled selected hidden>Selecione o Gênero
+                                                            </option>
+                                                            <option value="Masculino">Masculino</option>
+                                                            <option value="Feminino">Feminino</option>
+                                                            <option value="Prefiro não dizer">Prefiro não dizer</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control input-format"
+                                                            id="exampleEmail" name="email" placeholder="Email">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                                        <label for="escolaridade">Escolaridade</label>
+                                                        <input class="form-control file-input" type="file"
+                                                            id="escolaridade" name="escolaridade">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <label for="cart_trab">Carteira de Trabalho</label>
+                                                        <input class="form-control file-input" type="file"
+                                                            id="cart_trab" name="cart_trab">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group row">
+                                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                                        <label for="reservista">Certificado de Reservista</label>
+                                                        <input class="form-control file-input" type="file"
+                                                            id="reservista" name="reservista">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <label for="titulo_eleitoral">Título de Eleitor</label>
+                                                        <input class="form-control file-input" type="file"
+                                                            id="titulo_eleitoral" name="titulo_eleitoral">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                                        <select class="form-control select-format" name="cargo">
+                                                            <option value="" disabled selected hidden>Cargo</option>
+                                                            <option value="Gerente">Gerente</option>
+                                                            <option value="Auxiliar Administrativo">Auxiliar
+                                                                Administrativo</option>
+                                                            <option value="Auxiliar Financeiro">Auxiliar Financeiro
+                                                            </option>
+                                                            <option value="Garçom">Garçom</option>
+                                                            <option value="Pizzaiolo">Pizzaiolo</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <input type="date" class="form-control input-format"
+                                                            id="exampleDataAdmissao" name="data_admissao"
+                                                            placeholder="Data Admissão">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                                        <select class="form-control select-format" name="turno">
+                                                            <option value="" disabled selected hidden>Selecione o Turno
+                                                            </option>
+                                                            <option value="Dia">Dia</option>
+                                                            <option value="Noite">Noite</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control input-format"
+                                                            id="exampleBanco" name="banco" placeholder="Banco">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                                        <input type="text" class="form-control input-format"
+                                                            id="exampleAgencia" name="agencia" placeholder="Agência">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control input-format"
+                                                            id="exampleTipo_conta" name="tipo_conta"
+                                                            placeholder="Tipo de Conta">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                                        <input type="text" class="form-control input-format"
+                                                            id="exampleNumeroconta" name="numero_conta"
+                                                            placeholder="Número da conta">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <input type="text" class="form-control input-format"
+                                                            id="examplePix" name="pix" placeholder="Chave Pix">
+                                                    </div>
                                                 </div>
                                                 <hr>
                                                 <button class="btn btn-primary btn-user btn-block">
