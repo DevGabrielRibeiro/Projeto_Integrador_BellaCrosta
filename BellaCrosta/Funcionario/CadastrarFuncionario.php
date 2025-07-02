@@ -3,9 +3,29 @@
     <body>
         <?php
         $nome = $_POST["nome"];
-        $cpf = $_POST["cpf"];
-        $email = $_POST["email"];
+        $dataNascimento = $_POST["dataNascimento"];
+        $email = $_POST["cpf"];
         $telefone = $_POST["telefone"];
+        $senha = $_POST["senha"];
+        $senha = $_POST["senha"];
+        $senha = $_POST["senha"];
+        $senha = $_POST["senha"];
+        $senha = $_POST["senha"];
+        $senha = $_POST["senha"];
+        $senha = $_POST["senha"];
+        $senha = $_POST["senha"];
+        $senha = $_POST["senha"];
+        $senha = $_POST["senha"];
+        $senha = $_POST["senha"];
+        $senha = $_POST["senha"];
+        $senha = $_POST["senha"];
+        $senha = $_POST["senha"];
+        $senha = $_POST["senha"];
+        $senha = $_POST["senha"];
+        $senha = $_POST["senha"];
+        $senha = $_POST["senha"];
+        $senha = $_POST["senha"];
+        $senha = $_POST["senha"];
         $senha = $_POST["senha"];
         $conn = mysqli_connect($servidor, $dbusuario, $dbsenha, $dbname);
         mysqli_select_db($conn, 'db_bellacrosta');
