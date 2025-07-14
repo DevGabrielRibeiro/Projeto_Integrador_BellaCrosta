@@ -202,17 +202,13 @@
         </nav>
 
 
-                <h1>Consultar Produtos Cadastrados</h1>
+                <h1>Consultar Estoque Cadastrado</h1>
             <table class="table">
                 <thead>
                     <tr>
                         <td scope="col"><strong>ID</strong></td>	
                         <td scope="col"><strong>Nome</strong></td>		
-                        <td scope="col"><strong>Descrição</strong></td>
-                        <td scope="col"><strong>Valor de Compra</strong></td>
-                        <td scope="col"><strong>Valor de Venda</strong></td>
-                        <td scope="col"><strong>Ingredientes</strong></td>
-                        <td scope="col"><strong>Imagem</strong></td>
+                        <td scope="col"><strong>Quantidade</strong></td>
                         <td scope="col"><strong>Editar</strong></td>
                         <td scope="col"><strong>Deletar</strong></td>
                     </tr>
@@ -220,17 +216,13 @@
 
                     <?php
                         include("../conectarbd.php");
-                        $selecionar= mysqli_query($conn, "SELECT * FROM tb_produtos");
+                        $selecionar= mysqli_query($conn, "SELECT * FROM tb_estoque");
                         while ($campo= mysqli_fetch_array($selecionar)){?>
                             <tr>
                                 <th scope="row"><?=$campo["id_produto"]?></th>
                                 <th scope="row"><?=$campo["nome"]?></th>
-                                <th scope="row"><?=$campo["descricao"]?></th>
-                                <th scope="row"><?=$campo["valor_compra"]?></th>
-                                <th scope="row"><?=$campo["valor_venda"]?></th>
-                                <th scope="row"><?=$campo["ingredientes"]?></th>
-                                <th scope="row"><img src="../image/<?=$campo["imagem"]?>" alt="Imagem do Produto" width="100"></th>
-                                <th scope="row"><i><a href="ExcluirProduto.php?p=excluir&produto=<?php echo $campo['id_produto'];?>">Excluir</i></a></th>
+                                <th scope="row"><?=$campo["quantidade"]?></th>
+                                <th scope="row"><i><a href="ExcluirEstoque.php?p=excluir&estoque=<?php echo $campo['id_estoque'];?>">Excluir</i></a></th>
                             </tr>
                     <?php }?>
                 </table>
