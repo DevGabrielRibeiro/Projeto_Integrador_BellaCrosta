@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "vscode_custom_css.imports":["file:///C:/Users/gabriel53600916/.vscode-insiders/vscode_style/vscode_style.css"],
 }
