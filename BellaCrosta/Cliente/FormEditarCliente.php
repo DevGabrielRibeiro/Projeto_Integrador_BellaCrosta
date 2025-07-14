@@ -231,30 +231,30 @@
 
                                                     <div class="form-group">
                                                         <input type="text" class="form-control form-control-user" id="exampleInputNome"
-                                                               name="nome" aria-describedby="emailHelp" placeholder="Digite seu nome"
+                                                               name="nome" aria-describedby="emailHelp"
                                                                value="<?= $campo["nome"] ?>">
                                                     </div>
 
                                                     <div class="form-group">
                                                         <input type="text" class="form-control form-control-user" id="exampleInputCpf"
-                                                               name="cpf" placeholder="Digite seu CPF" value="<?= $campo["cpf"] ?>">
+                                                               name="cpf" value="<?= $campo["cpf"] ?>">
                                                     </div>
 
                                                     <div class="form-group">
                                                         <input type="email" class="form-control form-control-user"
-                                                               id="exampleInputEmail" name="email" placeholder="Digite seu email"
+                                                               id="exampleInputEmail" name="email"
                                                                value="<?= $campo["email"] ?>">
                                                     </div>
 
                                                     <div class="form-group">
                                                         <input type="text" class="form-control form-control-user"
-                                                               id="exampleInputTelefone" name="telefone" placeholder="Digite seu telefone"
+                                                               id="exampleInputTelefone" name="telefone"
                                                                value="<?= $campo["telefone"] ?>">
                                                     </div>
 
                                                     <div class="form-group">
                                                         <input type="password" class="form-control form-control-user"
-                                                               id="exampleInputPassword" name="senha" placeholder="Digite sua senha"
+                                                               id="exampleInputPassword" name="senha"
                                                                value="<?= $campo["senha"] ?>">
                                                     </div>
 
