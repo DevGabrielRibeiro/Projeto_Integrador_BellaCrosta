@@ -5,6 +5,7 @@
         <title>Consultar Estoque</title>
         <link type="text/css" rel="stylesheet" href="../css/sb-admin-2.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link rel="icon" type="image/png" href="../image/Logo.png">
     </head>
 
 <body class="formCadastrarCliente">
@@ -174,7 +175,7 @@
                     <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                        <img class="img-profile rounded-circle" src="image/perfil.jpg">
+                        <img class="img-profile rounded-circle" src="../image/perfil.jpg">
                     </a>
                     <!-- Dropdown - User Information -->
                     <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"

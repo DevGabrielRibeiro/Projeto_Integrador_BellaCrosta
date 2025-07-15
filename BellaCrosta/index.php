@@ -20,14 +20,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                 </li>
                 <li><a href="#">Estoques</a>
                     <ul>
-                        <li><a href="Produto/FormCadastrarEstoque.html">Cadastrar</a></li>
-                        <li><a href="Produto/FormConsultarEstoque.php">Consultar</a>
+                        <li><a href="Estoque/FormCadastrarEstoque.html">Cadastrar</a></li>
+                        <li><a href="Estoque/FormConsultarEstoque.php">Consultar</a>
                     </ul>
                 </li>
                 <li><a href="#">Pedidos</a>
                     <ul>
-                        <li><a href="Produto/FormCadastrarPedido.html">Cadastrar</a></li>
-                        <li><a href="Produto/FormConsultarPedido.php">Consultar</a>
+                        <li><a href="Pedido/FormCadastrarPedido.html">Cadastrar</a></li>
+                        <li><a href="Pedido/FormConsultarPedido.php">Consultar</a>
                     </ul>
                 </li>
 
