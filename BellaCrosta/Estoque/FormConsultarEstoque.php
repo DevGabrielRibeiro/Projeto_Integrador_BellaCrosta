@@ -220,9 +220,10 @@
                         $selecionar= mysqli_query($conn, "SELECT * FROM tb_estoque");
                         while ($campo= mysqli_fetch_array($selecionar)){?>
                             <tr>
-                                <th scope="row"><?=$campo["id_produto"]?></th>
+                                <th scope="row"><?=$campo["id_estoque"]?></th>
                                 <th scope="row"><?=$campo["nome"]?></th>
                                 <th scope="row"><?=$campo["quantidade"]?></th>
+                                <th scope="row"><a href="FormEditarEstoque.php?editarid=<?php echo $campo ['id_estoque'];?>">Editar</a></th>
                                 <th scope="row"><i><a href="ExcluirEstoque.php?p=excluir&estoque=<?php echo $campo['id_estoque'];?>">Excluir</i></a></th>
                             </tr>
                     <?php }?>

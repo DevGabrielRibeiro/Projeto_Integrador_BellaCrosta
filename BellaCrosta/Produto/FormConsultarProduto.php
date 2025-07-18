@@ -230,7 +230,8 @@
                                 <th scope="row"><?=$campo["valor_compra"]?></th>
                                 <th scope="row"><?=$campo["valor_venda"]?></th>
                                 <th scope="row"><?=$campo["ingredientes"]?></th>
-                                <th scope="row"><img src="../image/<?=$campo["imagem"]?>" alt="Imagem do Produto" width="100"></th>
+                                <th scope="row"><img src="../image/imagens<?=$campo["imagem"]?>" alt="Imagem do Produto" width="100"></th>
+                                <th scope="row"><a href="FormEditarProduto.php?editarid=<?php echo $campo ['id_produto'];?>">Editar</a></th>
                                 <th scope="row"><i><a href="ExcluirProduto.php?p=excluir&produto=<?php echo $campo['id_produto'];?>">Excluir</i></a></th>
                             </tr>
                     <?php }?>

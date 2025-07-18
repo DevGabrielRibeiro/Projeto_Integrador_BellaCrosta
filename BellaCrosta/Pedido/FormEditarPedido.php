@@ -207,7 +207,7 @@
                 <?php
                 include("../conectarbd.php");
                 $recid = filter_input(INPUT_GET, 'editarid');
-                $selecionar = mysqli_query($conn, "SELECT * FROM tb_pedido WHERE id_pedido=$recid");
+                $selecionar = mysqli_query($conn, "SELECT * FROM tb_pedidos WHERE id_pedidos=$recid");
                 $campo = mysqli_fetch_array($selecionar);
                 ?>
 
@@ -227,7 +227,7 @@
                                                 </div>
                                                 <form class="user" action="EditarPedido.php" method="post">
                                                     <!--esta linha cria um campo oculto para passar o id_cidade, pois senão ao clicar em Salvar o código não saberá onde salvar.-->
-                                                    <input type="hidden" name="id" value="<?= $campo["id_pedido"] ?>">
+                                                    <input type="hidden" name="id" value="<?= $campo["id_pedidos"] ?>">
 
                                                     <div class="form-group">
                                                         <input type="text" class="form-control form-control-user" id="exampleInputNome"

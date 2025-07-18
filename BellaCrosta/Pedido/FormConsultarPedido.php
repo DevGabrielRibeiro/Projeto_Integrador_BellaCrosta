@@ -218,13 +218,13 @@
 
                     <?php
                         include("../conectarbd.php");
-                        $selecionar= mysqli_query($conn, "SELECT * FROM tb_pedido");
+                        $selecionar= mysqli_query($conn, "SELECT * FROM tb_pedidos");
                         while ($campo= mysqli_fetch_array($selecionar)){?>
                             <tr>
-                                <th scope="row"><?=$campo["id_pedido"]?></th>
+                                <th scope="row"><?=$campo["id_pedidos"]?></th>
                                 <th scope="row"><?=$campo["status"]?></th>
-                                <th scope="row"><a href="EditarPedido.php?p=editar&pedido=<?php echo $campo['id_pedido'];?>">Editar</a></th>
-                                <th scope="row"><i><a href="ExcluirPedido.php?p=excluir&pedido=<?php echo $campo['id_pedido'];?>">Excluir</i></a></th>
+                                <th scope="row"><a href="FormEditarPedido.php?editarid=<?php echo $campo['id_pedidos'];?>">Editar</a></th>
+                                <th scope="row"><i><a href="ExcluirPedido.php?p=excluir&pedido=<?php echo $campo['id_pedidos'];?>">Excluir</i></a></th>
                             </tr>
                     <?php }?>
                 </table>
