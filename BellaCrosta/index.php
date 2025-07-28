@@ -54,6 +54,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                         <li><a href="Pedido/FormConsultarPedido.php">Consultar</a>
                     </ul>
                 </li>
+                <li><a href="gmail/forms.php">Formulário de Email</a></li>
             </ul>
         </nav>
         <?php
