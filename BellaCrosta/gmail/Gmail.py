@@ -5,7 +5,7 @@ from email.mime.multipart import MIMEMultipart
 def enviar_email(email_destinatario, descricao):
     #Configurações do remetente
     email_sender = 'caramezgabriel72@gmail.com'
-    senha_sender = 'wsgq sjxq jyym yjhf'
+    senha_sender = 'xvrf wffw wzpq zuwo'
 
     if not email_destinatario or not email_destinatario.strip():
         print("Destinatário vazio!")
