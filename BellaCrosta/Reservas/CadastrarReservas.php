@@ -9,7 +9,7 @@
         $descricao = $_POST["descricao"];
         $conn = mysqli_connect($servidor, $dbusuario, $dbsenha, $dbname);
         mysqli_select_db($conn, 'db_bellacrosta');
-        $sql = "INSERT INTO tb_reserva_eventos (nome_cliente, data, hora, taxa, descricao) VALUES ('$nome_cliente', '$data', '$hora', '$taxa', '$descricao')";
+        $sql = "INSERT INTO tb_reservas (nome_cliente, data, hora, taxa, descricao) VALUES ('$nome_cliente', '$data', '$hora', '$taxa', '$descricao')";
         if (mysqli_query($conn, $sql)) {
             echo "<script>alert('Seus dados foram salvos !'); window.location = '../index.php';</script>";
         } else {

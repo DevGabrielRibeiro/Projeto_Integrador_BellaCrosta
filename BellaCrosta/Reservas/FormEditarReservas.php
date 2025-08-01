@@ -4,7 +4,7 @@
 
     <head>
         <meta charset="UTF-8">
-        <title>Editar Reserva de Eventos</title>
+        <title>Editar Cliente</title>
         <link rel="stylesheet" href="../css/sb-admin-2.min.css"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     </head>
@@ -54,8 +54,7 @@
                             <a class="collapse-item" href="">Funcionários</a>
                             <a class="collapse-item" href="">Clientes</a>
                             <a class="collapse-item" href="">Produtos</a>
-                            <a class="collapse-item" href="">Reservas Individuais</a>
-                            <a class="collapse-item" href="">Reservas Eventos</a>
+                            <a class="collapse-item" href="">Reservas</a>
                             <a class="collapse-item" href="">Mesas</a>
                             <a class="collapse-item" href="">Estoque</a>
                         </div>
@@ -78,8 +77,7 @@
                                 <a class="collapse-item" href="">Funcionários</a>
                                 <a class="collapse-item" href="">Clientes</a>
                                 <a class="collapse-item" href="">Produtos</a>
-                                <a class="collapse-item" href="">Reservas Individuais</a>
-                                <a class="collapse-item" href="">Reservas Eventos</a>
+                                <a class="collapse-item" href="">Reservas</a>
                                 <a class="collapse-item" href="">Mesas</a>
                                 <a class="collapse-item" href="">Estoque</a>
                             </div>
@@ -207,7 +205,7 @@
                 <?php
                 include("../conectarbd.php");
                 $recid = filter_input(INPUT_GET, 'editarid');
-                $selecionar = mysqli_query($conn, "SELECT * FROM tb_reserva_eventos WHERE id_reserva_eventos=$recid");
+                $selecionar = mysqli_query($conn, "SELECT * FROM tb_reservas WHERE id_reservas=$recid");
                 $campo = mysqli_fetch_array($selecionar);
                 ?>
 
@@ -223,37 +221,37 @@
                                         <div class="col-lg-6">
                                             <div class="p-5">
                                                 <div class="text-center">
-                                                    <h1 class="h4 text-gray-900 mb-4">Editar Dados da Reserva de Eventos</h1>
+                                                    <h1 class="h4 text-gray-900 mb-4">Editar Dados das Reservas </h1>
                                                 </div>
-                                                <form class="user" action="EditarReserva_Eventos.php" method="post">
+                                                <form class="user" action="EditarReservas.php" method="post">
                                                     <!--esta linha cria um campo oculto para passar o id_cidade, pois senão ao clicar em Salvar o código não saberá onde salvar.-->
-                                                    <input type="hidden" name="id" value="<?= $campo["id_reserva_eventos"] ?>">
+                                                    <input type="hidden" name="id" value="<?= $campo["id_reservas"] ?>">
 
                                                     <div class="form-group">
                                                         <input type="text" class="form-control form-control-user" id="exampleInputNome"
-                                                               name="nome_cliente" aria-describedby="emailHelp" 
-                                                               value="<?= $campo["nome_cliente"] ?>" required>
+                                                               name="nome_cliente" aria-describedby="emailHelp" placeholder="Digite seu nome"
+                                                               value="<?= $campo["nome_cliente"] ?>">
                                                     </div>
 
                                                     <div class="form-group">
                                                         <input type="date" class="form-control form-control-user" id="exampleInputCpf"
-                                                               name="data"  value="<?= $campo["data"] ?>" required>
+                                                               name="data" placeholder="Digite a data" value="<?= $campo["data"] ?>">
                                                     </div>
 
-                                                     <div class="form-group">
+                                                    <div class="form-group">
                                                         <input type="time" class="form-control form-control-user" id="exampleInputCpf"
-                                                               name="hora"  value="<?= $campo["hora"] ?>" required>
+                                                               name="hora" placeholder="Digite a hora" value="<?= $campo["hora"] ?>">
                                                     </div>
 
                                                     <div class="form-group">
                                                         <input type="text" class="form-control form-control-user"
-                                                               id="exampleInputEmail" name="taxa" 
-                                                               value="<?= $campo["taxa"] ?>" required>
+                                                               id="exampleInputEmail" name="taxa" placeholder="**taxa**"
+                                                               value="<?= $campo["taxa"] ?>">
                                                     </div>
 
                                                     <div class="form-group">
                                                         <input type="text" class="form-control form-control-user"
-                                                               id="exampleInputTelefone" name="descricao" 
+                                                               id="exampleInputTelefone" name="descricao" placeholder="Informe a descrição"
                                                                value="<?= $campo["descricao"] ?>">
                                                     </div>
 

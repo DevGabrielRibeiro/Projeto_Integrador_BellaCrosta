@@ -30,16 +30,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Project/PHP/PHPProject.php to edi
                         <li><a href="Funcionario/FormConsultarFuncionario.php">Consultar</a>
                     </ul>
                 </li>
-                <li><a href="#">Reserva Individual</a>
+                <li><a href="#">Reservas</a>
                     <ul>
-                        <li><a href="Reserva_Individual/FormCadastroReserva_Individual.html">Cadastrar</a></li>
-                        <li><a href="Reserva_Individual/FormConsultarReserva_Individual.php">Consultar</a>
-                    </ul>
-                </li>
-                <li><a href="#">Reserva para Eventos</a>
-                    <ul>
-                        <li><a href="Reserva_Eventos/FormCadastroReserva_Eventos.html">Cadastrar</a></li>
-                        <li><a href="Reserva_Eventos/FormConsultarReserva_Eventos.php">Consultar</a>
+                        <li><a href="Reservas/FormCadastroReservas.html">Cadastrar</a></li>
+                        <li><a href="Reservas/FormConsultarReservas.php">Consultar</a>
                     </ul>
                 </li>
                 <li><a href="#">Estoque</a>

@@ -70,10 +70,8 @@
                             <a class="collapse-item" href="../Cliente/FormCadastroCliente.html">Clientes</a>
                             <a class="collapse-item" href="../Produto/FormCadastroProduto.html">Produtos</a>
                             <a class="collapse-item"
-                                href="../Reserva_Individual/FormCadastroReserva_Individual.html">Reservas
-                                Individuais</a>
-                            <a class="collapse-item" href="../Reserva_Eventos/FormCadastroReserva_Eventos.html">Reservas
-                                Eventos</a>
+                                href="../Reservas/FormCadastroReservas.html">Reservas
+                                </a>
                             <a class="collapse-item" href="#">Mesas</a>
                             <a class="collapse-item" href="../Estoque/FormCadastroEstoque.html">Estoque</a>
                         </div>
@@ -100,10 +98,8 @@
                                 <a class="collapse-item" href="../Cliente/FormConsultarCliente.php">Clientes</a>
                                 <a class="collapse-item" href="../Produto/FormConsultarProduto.php">Produtos</a>
                                 <a class="collapse-item"
-                                    href="../Reserva_Individual/FormConsultarReserva_Individual.php">Reservas
-                                    Individuais</a>
-                                <a class="collapse-item"
-                                    href="../Reserva_Eventos/FormConsultarReserva_Eventos.php">Reservas Eventos</a>
+                                    href="../Reservas/FormConsultarReservas.php">Reservas
+                                    </a>
                                 <a class="collapse-item" href="#">Mesas</a>
                                 <a class="collapse-item" href="../Estoque/FormConsultarEstoque.php">Estoque</a>
                             </div>
@@ -204,9 +200,9 @@
                                     <div class="col-lg-6">
                                         <div class="p-5">
                                             <div class="text-center">
-                                                <h1 class="h4 text-gray-900 mb-4">Cadastro de Reserva Individual</h1>
+                                                <h1 class="h4 text-gray-900 mb-4">Cadastro de Reservas</h1>
                                             </div>
-                                            <form class="user" action="CadastrarReserva_Individual.php" method="post">
+                                            <form class="user" action="CadastrarReservas.php" method="post">
                                                 <div class="form-group">
                                                     <input type="text" class="form-control form-control-user"
                                                         id="exampleInputNome" aria-describedby="emailHelp"
@@ -214,9 +210,14 @@
                                                         required>
                                                 </div>
                                                 <div class="form-group">
-                                                    <input type="datetime-local" class="form-control form-control-user"
-                                                        id="exampleInputCpf" name="data_hora"
-                                                        placeholder="informe a data e a hora" required>
+                                                    <input type="date" class="form-control form-control-user"
+                                                        id="exampleInputCpf" name="data"
+                                                        placeholder="informe a data " required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="time" class="form-control form-control-user"
+                                                        id="exampleInputCpf" name="hora"
+                                                        placeholder="informe a hora" required>
                                                 </div>
                                                 <div class="form-group">
                                                     <input type="text" class="form-control form-control-user"
