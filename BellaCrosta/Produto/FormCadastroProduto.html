@@ -235,8 +235,14 @@
                                                         placeholder="Digite seus ingredientes">
                                                 </div>
                                                 <div class="form-group">
-                                                    <input type="file" class="form-control form-control-user"
-                                                        id="exampleInputImagem" name="imagem">
+                                                    <label for="exampleInputImagem" class="mb-2 font-weight-bold">Imagem do Produto</label>
+                                                    <div class="custom-file mb-2">
+                                                        <input type="file" class="custom-file-input" id="exampleInputImagem" name="imagem" accept="image/*">
+                                                        <label class="custom-file-label" for="exampleInputImagem">Escolha uma imagem</label>
+                                                    </div>
+                                                    <div id="preview-container" class="mt-2" style="display:none;">
+                                                        <img id="preview-image" src="#" alt="Miniatura da imagem" class="img-thumbnail" style="max-width: 150px; max-height: 150px;">
+                                                    </div>
                                                 </div>
                                                 <hr>
                                                 <button class="btn btn-primary btn-user btn-block">
@@ -269,6 +275,29 @@
 
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Miniatura da imagem selecionada
+        $(document).ready(function () {
+            $('#exampleInputImagem').on('change', function (e) {
+                const input = e.target;
+                if (input.files && input.files[0]) {
+                    const reader = new FileReader();
+                    reader.onload = function (e) {
+                        $('#preview-image').attr('src', e.target.result);
+                        $('#preview-container').show();
+                    }
+                    reader.readAsDataURL(input.files[0]);
+                    // Atualiza label do input
+                    $('.custom-file-label').text(input.files[0].name);
+                } else {
+                    $('#preview-container').hide();
+                    $('#preview-image').attr('src', '#');
+                    $('.custom-file-label').text('Escolha uma imagem');
+                }
+            });
+        });
+    </script>
 
 </body>
 

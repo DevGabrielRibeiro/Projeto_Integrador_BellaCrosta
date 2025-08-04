@@ -259,7 +259,7 @@
                                                     </div>
 
                                                      <div class="form-group">
-                                                        <input type="text" class="form-control form-control-user"
+                                                        <input type="file" class="form-control form-control-user"
                                                                id="exampleInputPassword" name="imagem" placeholder="Coloque a imagem"
                                                                value="<?= $campo["imagem"] ?>">
                                                     </div>

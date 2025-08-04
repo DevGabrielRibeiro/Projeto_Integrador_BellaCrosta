@@ -40,84 +40,59 @@
         </div>
 
         <!-- Nav Item - Pages Collapse Menu -->
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                aria-expanded="true" aria-controls="collapseTwo">
-                <i class="fas fa-fw fa-cog"></i>
-                <span>Cadastro</span>
-            </a>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Cadastrar:</h6>
-                    <a class="collapse-item" href="">Funcionários</a>
-                    <a class="collapse-item" href="">Clientes</a>
-                    <a class="collapse-item" href="">Produtos</a>
-                    <a class="collapse-item" href="">Reservas Individuais</a>
-                    <a class="collapse-item" href="">Reservas Eventos</a>
-                    <a class="collapse-item" href="">Mesas</a>
-                    <a class="collapse-item" href="">Estoque</a>
-                </div>
-            </div>
-        </li>
-
-        <!-- Nav Item - Utilities Collapse Menu -->
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                aria-expanded="true" aria-controls="collapseUtilities">
-                <i class="fas fa-fw fa-wrench"></i>
-                <span>Listagem</span>
-            </a>
-            <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Listar:</h6>
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Visualizar:</h6>
-                        <a class="collapse-item" href="">Funcionários</a>
-                        <a class="collapse-item" href="">Clientes</a>
-                        <a class="collapse-item" href="">Produtos</a>
-                        <a class="collapse-item" href="">Reservas Individuais</a>
-                        <a class="collapse-item" href="">Reservas Eventos</a>
-                        <a class="collapse-item" href="">Mesas</a>
-                        <a class="collapse-item" href="">Estoque</a>
+         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <h6 class="collapse-header">Cadastrar</h6>
+                            <a class="collapse-item"
+                                href="../Funcionario/FormCadastrarFuncionario.html">Funcionários</a>
+                            <a class="collapse-item" href="../Cliente/FormCadastroCliente.html">Clientes</a>
+                            <a class="collapse-item" href="../Produto/FormCadastroProduto.html">Produtos</a>
+                            <a class="collapse-item"
+                                href="../Reserva_Individual/FormCadastroReserva_Individual.html">Reservas
+                                Individuais</a>
+                            <a class="collapse-item" href="../Reserva_Eventos/FormCadastroReserva_Eventos.html">Reservas
+                                Eventos</a>
+                            <a class="collapse-item" href="#">Mesas</a>
+                            <a class="collapse-item" href="../Estoque/FormCadastroEstoque.html">Estoque</a>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </li>
+                </li>
+
+            </ul>
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <ul class="navbar-nav bg-gradient-primary  sidebar-dark accordion" id="accordionSidebar">
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                        aria-expanded="true" aria-controls="collapseUtilities">
+                        <i class="fa-solid fa-list-ul"></i>
+                        <span>Consulta</span>
+                    </a>
+                    <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                        data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <h6 class="collapse-header">Consultar</h6>
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <a class="collapse-item"
+                                    href="../Funcionario/FormConsultarFuncionario.php">Funcionários</a>
+                                <a class="collapse-item" href="../Cliente/FormConsultarCliente.php">Clientes</a>
+                                <a class="collapse-item" href="../Produto/FormConsultarProduto.php">Produtos</a>
+                                <a class="collapse-item"
+                                    href="../Reserva_Individual/FormConsultarReserva_Individual.php">Reservas
+                                    Individuais</a>
+                                <a class="collapse-item"
+                                    href="../Reserva_Eventos/FormConsultarReserva_Eventos.php">Reservas Eventos</a>
+                                <a class="collapse-item" href="#">Mesas</a>
+                                <a class="collapse-item" href="../Estoque/FormConsultarEstoque.php">Estoque</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </ul>
 
         <!-- Divider -->
-        <hr class="sidebar-divider">
-
-        <!-- Heading -->
-        <div class="sidebar-heading">
-            Testando
-        </div>
-
-        <!-- Nav Item - Pages Collapse Menu -->
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                aria-expanded="true" aria-controls="collapsePages">
-                <i class="fas fa-fw fa-folder"></i>
-                <span>Teste</span>
-            </a>
-        </li>
-
-        <!-- Nav Item - Charts -->
-        <li class="nav-item">
-            <a class="nav-link" href="">
-                <i class="fas fa-fw fa-chart-area"></i>
-                <span>Teste 2</span></a>
-        </li>
-
-        <!-- Nav Item - Tables -->
-        <li class="nav-item">
-            <a class="nav-link" href="">
-                <i class="fas fa-fw fa-table"></i>
-                <span>Teste 3</span></a>
-        </li>
-
-        <!-- Divider -->
-        <hr class="sidebar-divider d-none d-md-block">
+    <hr class="sidebar-divider d-none d-md-block">
     </ul>
     <!-- End of Sidebar -->
 
@@ -204,6 +179,13 @@
 
 
                 <h1>Consultar Produtos Cadastrados</h1>
+                <!-- Formulário de pesquisa -->
+                <form method="get" class="mb-3">
+                    <div class="input-group">
+                        <input type="text" name="pesquisa_nome" class="form-control" placeholder="Pesquisar pelo nome do produto" value="<?php echo isset($_GET['pesquisa_nome']) ? htmlspecialchars($_GET['pesquisa_nome']) : ''; ?>">
+                        <button type="submit" class="btn btn-primary">Pesquisar</button>
+                    </div>
+                </form>
             <table class="table">
                 <thead>
                     <tr>
@@ -221,7 +203,13 @@
 
                     <?php
                         include("../conectarbd.php");
-                        $selecionar= mysqli_query($conn, "SELECT * FROM tb_produtos");
+                        // Pesquisa pelo nome do produto
+                        $where = "";
+                        if (!empty($_GET['pesquisa_nome'])) {
+                            $pesquisa_nome = mysqli_real_escape_string($conn, $_GET['pesquisa_nome']);
+                            $where = "WHERE nome LIKE '%$pesquisa_nome%'";
+                        }
+                        $selecionar= mysqli_query($conn, "SELECT * FROM tb_produtos $where");
                         while ($campo= mysqli_fetch_array($selecionar)){?>
                             <tr>
                                 <th scope="row"><?=$campo["id_produto"]?></th>
