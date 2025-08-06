@@ -28,7 +28,7 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="../index.php">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Página Inicial</span></a>
         </li>
@@ -42,81 +42,62 @@
         </div>
 
         <!-- Nav Item - Pages Collapse Menu -->
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                aria-expanded="true" aria-controls="collapseTwo">
-                <i class="fas fa-fw fa-cog"></i>
-                <span>Cadastro</span>
-            </a>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Cadastrar:</h6>
-                    <a class="collapse-item" href="">Funcionários</a>
-                    <a class="collapse-item" href="">Clientes</a>
-                    <a class="collapse-item" href="">Produtos</a>
-                    <a class="collapse-item" href="">Reservas Individuais</a>
-                    <a class="collapse-item" href="">Reservas Eventos</a>
-                    <a class="collapse-item" href="">Mesas</a>
-                    <a class="collapse-item" href="">Estoque</a>
-                </div>
-            </div>
-        </li>
-
-        <!-- Nav Item - Utilities Collapse Menu -->
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                aria-expanded="true" aria-controls="collapseUtilities">
-                <i class="fas fa-fw fa-wrench"></i>
-                <span>Listagem</span>
-            </a>
-            <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">Listar:</h6>
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Visualizar:</h6>
-                        <a class="collapse-item" href="">Funcionários</a>
-                        <a class="collapse-item" href="">Clientes</a>
-                        <a class="collapse-item" href="">Produtos</a>
-                        <a class="collapse-item" href="">Reservas Individuais</a>
-                        <a class="collapse-item" href="">Reservas Eventos</a>
-                        <a class="collapse-item" href="">Mesas</a>
-                        <a class="collapse-item" href="">Estoque</a>
+            <ul class="navbar-nav bg-gradient-primary sidebar-dark accordion" id="accordionSidebar">
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                        <i class="fa-solid fa-address-card"></i>
+                        <span>Cadastro</span>
+                    </a>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <h6 class="collapse-header">Cadastrar</h6>
+                            <a class="collapse-item"
+                                href="../Funcionario/FormCadastrarFuncionario.html">Funcionários</a>
+                            <a class="collapse-item" href="../Cliente/FormCadastroCliente.html">Clientes</a>
+                            <a class="collapse-item" href="../Produto/FormCadastroProduto.html">Produtos</a>
+                            <a class="collapse-item"
+                                href="../Reserva_Individual/FormCadastroReserva_Individual.html">Reservas
+                                Individuais</a>
+                            <a class="collapse-item" href="../Reserva_Eventos/FormCadastroReserva_Eventos.html">Reservas
+                                Eventos</a>
+                            <a class="collapse-item" href="#">Mesas</a>
+                            <a class="collapse-item" href="../Estoque/FormCadastroEstoque.html">Estoque</a>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </li>
+                </li>
 
-        <!-- Divider -->
-        <hr class="sidebar-divider">
+            </ul>
 
-        <!-- Heading -->
-        <div class="sidebar-heading">
-            Testando
-        </div>
-
-        <!-- Nav Item - Pages Collapse Menu -->
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
-                aria-expanded="true" aria-controls="collapsePages">
-                <i class="fas fa-fw fa-folder"></i>
-                <span>Teste</span>
-            </a>
-        </li>
-
-        <!-- Nav Item - Charts -->
-        <li class="nav-item">
-            <a class="nav-link" href="">
-                <i class="fas fa-fw fa-chart-area"></i>
-                <span>Teste 2</span></a>
-        </li>
-
-        <!-- Nav Item - Tables -->
-        <li class="nav-item">
-            <a class="nav-link" href="">
-                <i class="fas fa-fw fa-table"></i>
-                <span>Teste 3</span></a>
-        </li>
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <ul class="navbar-nav bg-gradient-primary  sidebar-dark accordion" id="accordionSidebar">
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                        aria-expanded="true" aria-controls="collapseUtilities">
+                        <i class="fa-solid fa-list-ul"></i>
+                        <span>Consulta</span>
+                    </a>
+                    <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                        data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <h6 class="collapse-header">Consultar</h6>
+                            <div class="bg-white py-2 collapse-inner rounded">
+                                <a class="collapse-item"
+                                    href="../Funcionario/FormConsultarFuncionario.php">Funcionários</a>
+                                <a class="collapse-item" href="../Cliente/FormConsultarCliente.php">Clientes</a>
+                                <a class="collapse-item" href="../Produto/FormConsultarProduto.php">Produtos</a>
+                                <a class="collapse-item"
+                                    href="../Reserva_Individual/FormConsultarReserva_Individual.php">Reservas
+                                    Individuais</a>
+                                <a class="collapse-item"
+                                    href="../Reserva_Eventos/FormConsultarReserva_Eventos.php">Reservas Eventos</a>
+                                <a class="collapse-item" href="#">Mesas</a>
+                                <a class="collapse-item" href="../Estoque/FormConsultarEstoque.php">Estoque</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
 
         <!-- Divider -->
         <hr class="sidebar-divider d-none d-md-block">
@@ -228,6 +209,23 @@
                             </tr>
                     <?php }?>
                 </table>
+
+<!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    
     </body>
 </html>
 

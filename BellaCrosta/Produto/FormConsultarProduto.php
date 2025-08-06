@@ -26,7 +26,7 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="../index.php">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Página Inicial</span></a>
         </li>
@@ -40,7 +40,14 @@
         </div>
 
         <!-- Nav Item - Pages Collapse Menu -->
-         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <ul class="navbar-nav bg-gradient-primary sidebar-dark accordion" id="accordionSidebar">
+                <li class="nav-item">
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                        <i class="fa-solid fa-address-card"></i>
+                        <span>Cadastro</span>
+                    </a>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
                             <h6 class="collapse-header">Cadastrar</h6>
                             <a class="collapse-item"
@@ -89,7 +96,6 @@
                     </div>
                 </li>
             </ul>
-        </ul>
 
         <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
@@ -218,12 +224,38 @@
                                 <th scope="row"><?=$campo["valor_compra"]?></th>
                                 <th scope="row"><?=$campo["valor_venda"]?></th>
                                 <th scope="row"><?=$campo["ingredientes"]?></th>
-                                <th scope="row"><img src="../image/imagens<?=$campo["imagem"]?>" alt="Imagem do Produto" width="100"></th>
+                                <th scope="row">
+                                    <?php
+                                        $imgPath = "../uploads/" . $campo['imagem'];
+                                        $imgFullPath = __DIR__ . "/../uploads/" . $campo['imagem'];
+                                        if (!empty($campo['imagem']) && file_exists($imgFullPath)) : ?>
+                                        <img src="<?= $imgPath ?>" alt="Imagem do Produto" style="max-width: 100px; max-height: 100px;">
+                                    <?php else: ?>
+                                        <span>Sem imagem</span>
+                                    <?php endif; ?>
+                                </th>
                                 <th scope="row"><a href="FormEditarProduto.php?editarid=<?php echo $campo ['id_produto'];?>">Editar</a></th>
                                 <th scope="row"><i><a href="ExcluirProduto.php?p=excluir&produto=<?php echo $campo['id_produto'];?>">Excluir</i></a></th>
                             </tr>
                     <?php }?>
                 </table>
+                
+<!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
     </body>
 </html>
 
