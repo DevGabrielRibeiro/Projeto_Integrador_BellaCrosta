@@ -5,6 +5,8 @@
         <title>Consultar CLientes</title>
         <link type="text/css" rel="stylesheet" href="../css/sb-admin-2.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     </head>
 
 <body class="formCadastrarFuncionario">
@@ -66,13 +68,14 @@
             </ul>
 
             <!-- Nav Item - Utilities Collapse Menu -->
-            <ul class="navbar-nav bg-gradient-primary  sidebar-dark accordion" id="accordionSidebar">
+            <ul class="navbar-nav bg-gradient-primary sidebar-dark accordion" id="accordionSidebar">
                 <li class="nav-item">
                     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
                         aria-expanded="true" aria-controls="collapseUtilities">
                         <i class="fa-solid fa-list-ul"></i>
                         <span>Consulta</span>
                     </a>
+                    
                     <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
                         data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
