@@ -1,2 +1,0 @@
-# BellaCrosta_V2
-
