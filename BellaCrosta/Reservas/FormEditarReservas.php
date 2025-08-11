@@ -42,48 +42,55 @@
                 </div>
 
                 <!-- Nav Item - Pages Collapse Menu -->
+                <ul class="navbar-nav bg-gradient-primary sidebar-dark accordion" id="accordionSidebar">
                 <li class="nav-item">
                     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                       aria-expanded="true" aria-controls="collapseTwo">
-                        <i class="fas fa-fw fa-cog"></i>
+                        aria-expanded="false" aria-controls="collapseTwo">
+                        <i class="fa-solid fa-address-card"></i>
                         <span>Cadastro</span>
                     </a>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
-                            <h6 class="collapse-header">Cadastrar:</h6>
-                            <a class="collapse-item" href="">Funcionários</a>
-                            <a class="collapse-item" href="">Clientes</a>
-                            <a class="collapse-item" href="">Produtos</a>
-                            <a class="collapse-item" href="">Reservas</a>
-                            <a class="collapse-item" href="">Mesas</a>
-                            <a class="collapse-item" href="">Estoque</a>
+                            <h6 class="collapse-header">Cadastrar</h6>
+                            <a class="collapse-item"
+                                href="../Funcionario/FormCadastrarFuncionario.html">Funcionários</a>
+                            <a class="collapse-item" href="../Cliente/FormCadastroCliente.html">Clientes</a>
+                            <a class="collapse-item" href="../Produto/FormCadastroProduto.html">Produtos</a>
+                            <a class="collapse-item"
+                                href="../Reservas/FormCadastroReservas.html">Reservas
+                            <a class="collapse-item" href="../Estoque/FormCadastroEstoque.html">Estoque</a>
                         </div>
                     </div>
                 </li>
+            </ul>
 
-                <!-- Nav Item - Utilities Collapse Menu -->
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <ul class="navbar-nav bg-gradient-primary  sidebar-dark accordion" id="accordionSidebar">
                 <li class="nav-item">
                     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                       aria-expanded="true" aria-controls="collapseUtilities">
-                        <i class="fas fa-fw fa-wrench"></i>
-                        <span>Listagem</span>
+                        aria-expanded="true" aria-controls="collapseUtilities">
+                        <i class="fa-solid fa-list-ul"></i>
+                        <span>Consulta</span>
                     </a>
                     <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                         data-parent="#accordionSidebar">
+                        data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
-                            <h6 class="collapse-header">Listar:</h6>
+                            <h6 class="collapse-header">Consultar</h6>
                             <div class="bg-white py-2 collapse-inner rounded">
-                                <h6 class="collapse-header">Visualizar:</h6>
-                                <a class="collapse-item" href="">Funcionários</a>
-                                <a class="collapse-item" href="">Clientes</a>
-                                <a class="collapse-item" href="">Produtos</a>
-                                <a class="collapse-item" href="">Reservas</a>
-                                <a class="collapse-item" href="">Mesas</a>
-                                <a class="collapse-item" href="">Estoque</a>
+                                <a class="collapse-item"
+                                    href="../Funcionario/FormConsultarFuncionario.php">Funcionários</a>
+                                <a class="collapse-item" href="../Cliente/FormConsultarCliente.php">Clientes</a>
+                                <a class="collapse-item" href="../Produto/FormConsultarProduto.php">Produtos</a>
+                                <a class="collapse-item"
+                                    href="../Reservas/FormConsultarReservas.php">Reservas
+                                    </a>
+                                <a class="collapse-item" href="../Estoque/FormConsultarEstoque.php">Estoque</a>
                             </div>
                         </div>
                     </div>
                 </li>
+            </ul>
+        </ul>
 
                 <!-- Divider -->
                 <hr class="sidebar-divider">

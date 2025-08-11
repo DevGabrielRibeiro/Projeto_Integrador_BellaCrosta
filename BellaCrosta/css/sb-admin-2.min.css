@@ -12662,3 +12662,8 @@ label {
     margin-bottom: 0.3rem;
     display: inline-block;
 }
+
+#img-cad {
+    width: 125%;
+    height: 1300px;
+}
